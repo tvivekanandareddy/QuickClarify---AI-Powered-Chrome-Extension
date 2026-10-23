@@ -1,0 +1,1 @@
+# QuickClarify---AI-Powered-Chrome-Extension
