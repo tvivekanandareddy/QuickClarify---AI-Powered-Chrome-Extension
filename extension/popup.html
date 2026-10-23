@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>QuickClarify · A little clarity</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<main class="shell">
+  <header><a class="brand" href="popup.html"><span class="logo">q<span>✦</span></span>QuickClarify<span class="beta">BETA</span></a><button id="settings-toggle" class="icon" aria-label="Settings" title="Settings">⚙</button></header>
+  <div class="status"><span class="dot"></span><span id="connection">Connecting to your backend</span><span class="status-note">YOUR READING COMPANION</span></div>
+  <section id="settings" hidden class="settings"><h2>Make it yours</h2><label for="prompt">Custom instructions</label><textarea id="prompt" maxlength="1000" placeholder="e.g. Explain like I’m new to programming. Use everyday examples."></textarea><p>Saved on this device. Applied in live AI mode.</p><button id="save-settings" class="primary">Save preferences <span>✓</span></button></section>
+  <section class="intro"><div class="eyebrow">LESS CONFUSION. MORE CURIOSITY.</div><h1>A little clarity.<br><em>A lot of possibility.</em></h1><p>Big ideas don’t have to be complicated.<br>Highlight something. Let’s make sense of it.</p></section>
+  <section class="workspace"><div class="label-row"><label for="selection">WHAT ARE YOU CURIOUS ABOUT?</label><span id="count">0 / 6000</span></div><div class="input-wrap"><textarea id="selection" maxlength="6000" placeholder="Paste a concept, a sentence, or that one thing you’ve read three times…"></textarea><span class="input-mark">✦</span></div><div class="samples"><span>Try it:</span><button data-example="Neural networks">Neural networks ↗</button><button data-example="REST APIs">REST APIs ↗</button><button data-example="Asynchronous programming">Async ↗</button></div>
+  <div class="label-row length-label"><span>HOW DEEP SHOULD WE GO?</span><span class="optional">Your pace, your choice</span></div>
+  <div class="lengths" role="group" aria-label="Explanation length"><button data-length="one_line"><span class="length-symbol">≡</span><strong>One line</strong><small>The gist</small></button><button data-length="standard" class="selected" aria-pressed="true"><span class="length-symbol">☷</span><strong>Standard</strong><small>Connect the dots</small></button><button data-length="detailed"><span class="length-symbol">▤</span><strong>Detailed</strong><small>The full picture</small></button></div>
+  <button id="explain" class="primary"><span>✦ &nbsp; Clarify this</span><span>↗</span></button><p class="privacy">Only the text you submit is sent for explanation.</p></section>
+  <section id="result" class="result" hidden aria-live="polite"><div class="result-head"><span>✦ &nbsp; A MOMENT OF CLARITY</span><button id="copy" class="text-button">Copy ↗</button></div><div id="result-text"></div><div class="result-meta"><span id="model"></span><button id="on-page" class="text-button" hidden>Show on page ↗</button></div></section>
+  <p id="error" role="alert" hidden></p>
+  <section class="how"><span class="how-icon">⌁</span><div><strong>Highlight. Press. Understand.</strong><p id="shortcut-hint">Highlight text, then press Ctrl+Shift+K (⌘⇧K on Mac).<br>Change the key at chrome://extensions/shortcuts.</p></div></section>
+  <footer><span>Made for your <em>aha!</em> moments.</span><button id="history-toggle" class="text-button">Recent explanations <span>↗</span></button></footer>
+  <section id="history" hidden><div class="label-row"><h2>Your recent discoveries</h2><button id="clear-history" class="text-button">Clear</button></div><div id="history-list"></div></section>
+</main><script src="popup.js"></script>
+</body></html>

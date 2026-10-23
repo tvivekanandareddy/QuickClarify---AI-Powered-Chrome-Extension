@@ -1,0 +1,34 @@
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+.envrc
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Local logs, browser state, and editor files
+*.log
+node_modules/
+playwright-report/
+test-results/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Local captures; curated documentation images live in docs/.
+/preview.png
