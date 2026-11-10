@@ -8,6 +8,10 @@ Built with **Python · FastAPI · OpenAI Responses API · Chrome Manifest V3 · 
 
 ![QuickClarify browser playground showing the interface and a demo explanation](docs/preview.png)
 
+## Beginner project guide
+
+New to Chrome extensions, APIs, Python, or JavaScript? Read the [complete beginner project guide](docs/QuickClarify_Beginner_Project_Guide.md). Its 25 chapters explain the purpose, architecture, file responsibilities, design choices, code examples, setup, troubleshooting, privacy, and common questions in plain language.
+
 ## Why QuickClarify?
 
 Reading technical material often means interrupting your work to search for definitions or copy text into another app. QuickClarify makes that moment simpler: select the text and ask for help in place.
